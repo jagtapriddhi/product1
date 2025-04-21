@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width device-width,initial-scale=1.0">
+    	<title>Product review page</title>
+	<style>
+     main-product-image{
+            width:50px;
+            height:50px;
+            object-fit:cover;
+            border:1px solid black;
+            border-radius:20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+            margin: 20px auto;
+            display: block;
+            justify-content: center;
+     }
+     .product-image{
+        height: 70px;
+        width: 70px;
+        object-fit:cover ;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 10px;
+        cursor: pointer;
+        justify-content: center;
+     }
+     .product-image-container{
+        display: flex;
+        justify-content: center;
+     }
+    </style>
+</head>
+<body>
+
+	<img src="C:\Users\LENOVO\Downloads\ass24\sumsung 1.jpg">
+
+    <div class="main-product-image-container"></div>
+    <img src="sumsung 1.jpg" class="product-image" onclick="changeImage(sumsung 1.jpg)"/>
+    <img src="s721-blue-1.webp" class="product-image" onclick="changeImage(s721-blue-1.webp)"/>
+    <img src="sumsung.jpg" class="product-image" onclick="changeImage(sumsung.jpg)"/>
+    <img src="sumsung.webp" class="product-image" onclick="changeImage(sumsung.webp)"/>
+</div>
+    
+<script>
+    function changeImage(num){
+        const mainImage = document.getElementById('main-product-image');
+
+        if(num1){
+            mainImage.src = "sumsung 1.jpg";
+        }else if(num==sumsung 1.jpg){
+            mainImage.src = "s721-blue-1.webp";
+        }else if(num==s721-blue-1.webp){
+            mainImage.src = "sumsung.jpg";
+        }else if(num==sumsung.jpg){
+            mainImage.src = "sumsung.webp";
+    }
+}
+</script>
+</body>
+</html>
